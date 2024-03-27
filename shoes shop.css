@@ -1,0 +1,411 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+  }
+  /* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+  body {
+    font-family: 'Oswald', sans-serif;
+  padding-top: 0; 
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+  overflow-y: scroll;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    z-index: 105;
+   
+  }
+  .logo-section {
+    display: flex;
+    align-items: center; 
+   margin-right: auto;
+}
+  
+ nav{
+justify-content: center;
+text-decoration: none;
+ }
+
+  
+  nav ul {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  nav ul li a:active{
+    font-weight: bold;
+  }
+  nav ul li a:visited {
+    color: #ffffff;
+    text-decoration: none;  
+  }
+ nav ul li a{
+  color: white;
+  text-decoration: none;
+ }
+  
+  .search button {
+    margin-left: 1%;
+    border: none;
+  background-color: #d37d03; /* Change to your preferred color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded shape */
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  }
+  .search button:hover{
+    background-color: #ff9a0e;
+  }
+  .search input[type="text"] {
+    border: none;
+    background-color: #f2f2f2; /* Change to your preferred background color */
+    color: #333; /* Text color */
+    padding: 10px 20px;
+    border-radius: 30px; /* Rounded shape */
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    width: 200px; /* Adjust width as needed */
+  }
+  .search input[type="text"]:hover,
+.search input[type="text"]:focus {
+  background-color: #e0e0e0; /* Change to a slightly darker shade for hover/focus effect */
+}
+/* Sign In Button */
+.signin,
+.login {
+  white-space: nowrap;
+  border: none;
+  background-color: #d37d03; /* Change to your preferred color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded shape */
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.buttons{
+  margin-left: 5%;
+  align-content: center;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+align-items: center;  
+}
+.pics .png:not(:first-child){
+  display: none;
+}
+.logotext{
+  padding: 0px 30px;
+}
+.signin:hover,
+.login:hover {
+  background-color: #ff9a0e;
+}
+.shopnow:hover {
+  background-color: #ff9a0e;
+}
+.search{
+  margin-right: -11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .signin,
+  .login {
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  
+  main section {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Home{
+    max-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-image: url('90c5cd743670cb40582585fb1030891d.jpg');
+   flex-direction: row-reverse;
+    background-size: cover; /* Make the image cover the entire body */
+    background-position: center; /* Center the image */
+    height: 100vh;
+   
+  }
+  .text{
+    font-size: 11px;
+    color: white;
+    margin: 0;
+    max-width: 600px;
+    margin-left: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 28PX;
+    align-items: center;
+    max-height: 80vh;
+    text-align: left;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  .shopnow{
+    margin-left: 5%;
+    margin-top: 5%;
+    white-space: nowrap;
+  border: none;
+  background-color: #d37d03; /* Change to your preferred color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded shape */
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  }
+  .main{
+    font-size: 40px;
+    scroll-snap-align: start;
+  }
+.homecont{
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-left: 15%;
+  z-index: 5;
+}
+ .run::before {
+  content: ""; /* Required for pseudo-elements */
+  display: block;
+  width: 235px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: #aaaaaa; /* Adjust the line color */
+  margin: 0 auto 10px; /* Adjust spacing - 0 top, auto left/right (centers it), 10px bottom */
+}
+ 
+  .slider{
+    position: relative;
+    margin-right: -30%;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    bottom: -30px;
+    z-index: 2;
+  }
+ .pics{
+  background-image: linear-gradient(transparent, #ffffff00, transparent);
+    width: 55%;
+    height: auto;
+  position: relative;
+
+  padding: 0;
+  bottom: 50px;
+
+  display: flex;
+  margin-right: -100%;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  z-index: 1;
+  border-radius: 0.5rem;
+ }
+ .pics img {
+  overflow-x: hidden;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+ }
+ #slide1 ,
+ #slide3 ,
+ #slide4 {
+  max-width: 100%;
+  width: 55%;
+  height: auto;
+position: relative;
+margin-right: -5%;
+padding: 0;
+bottom: 0px
+ }
+ .slidernav {
+  align-items: center;
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 100px;
+	left: 26%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+
+.slidernav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slidernav a:hover {
+	opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+.overlay3 {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 100%; /* Adjust as needed */
+  height: 50%; /* Adjust as needed */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+.overlay4 {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 100%; /* Adjust as needed */
+  height: 50%; /* Adjust as needed */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+.Shop{
+ 
+  background-color: rgb(40, 40, 40);
+}
+.Shop h1{
+  color: #f1f1f1;
+  z-index: 5;
+}
+.todo{
+  z-index: 5;
+}
+.overlay5 {
+  position: absolute;
+  
+  left: 0;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 2;
+}
+.page1{
+  width: 100%;
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative; /* Needed for positioning the bar */
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+.categories {
+border-radius: 10px;
+  left: 0;
+  top: -30%;
+  position: relative;
+color: #000000;
+  width: 95%;
+  height: 20%;
+  background-color: #ffffff ; /* Change color as desired */
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Horizontally align items with space around them */
+  align-items: center; /* Center items vertically */
+  
+}
+.categorie,
+.categorie1{
+  width: 10%;
+  height: 90%;
+  box-shadow: 3px 3px  5px rgb(106, 50, 0);
+  margin-left: 2.5%;
+  text-align: center;
+ background-color: #dbdbdb;
+ border-radius: 4%;
+}
+.cTEXT {
+margin-left: 2% ;
+ color: #000000;
+ font-weight: bold;
+}
+.categorie p,
+.categorie1 p{
+
+  color: rgb(0, 0, 0);
+  padding: 0 30px;
+  
+}
+.categorie img,
+.categorie1 img{
+  transform: translatey(10%);
+  object-fit: cover;
+    width: 95%; /* Image takes 100% width of its container */
+    height: auto;
+}
+.bg,
+.bg1{
+  width: 100%;
+  height: 100%;
+  transform: translatey(-80%);
+
+}

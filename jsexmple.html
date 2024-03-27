@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Example</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Example</h1>
+    <button id="colorChangeButton">Change Background Color</button>
+  </div>
+
+  <script>
+    // JavaScript code
+    const colorChangeButton = document.getElementById('colorChangeButton');
+
+    colorChangeButton.addEventListener('click', function() {
+      const randomColor = getRandomColor();
+      document.body.style.backgroundColor = randomColor;
+    });
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>
